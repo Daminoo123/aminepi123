@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+<h1>Add Accident</h1>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2; /* Light grey background */
+    }
+
+    h1 {
+        color: blue; /* Blue heading */
+    }
+
+    form {
+        background-color: white; /* White form background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Grey shadow */
+        margin: 20px auto;
+        max-width: 500px;
+    }
+
+    form input[type="text"],
+    form textarea,
+    form select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc; /* Grey border */
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    form input[type="submit"] {
+        background-color: blue; /* Blue submit button */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+</style>
+
+{{ form(f, {'attr': {'novalidate': 'novalidate'}}) }}
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'baseback.html.twig' %}
+
+{% block content %}
+<fieldset align="center">
+    <div class="container">
+        <h1>List Accident</h1>
+        <table align="center">
+            <tr>
+                <th>Type</th>
+                <th>Date of Accident</th>
+                <th>Description</th>
+                <th>Remorquage</th>
+                <th>Constat</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+    
+            {% for a in Accident %}
+            <tr>
+                <td style="margin-right: 10px;">{{ a.typeAccident }}</td>
+                <td style="margin-right: 10px;">{{ a.dateAccident }}</td>
+                <td style="margin-right: 10px;">{{ a.descriptionAccident }}</td>
+                <td style="margin-right: 10px;">{{ a.Accident_remorquage }}</td>
+                <td style="margin-right: 10px;">{{ a.constat }}</td>
+                <td><a href="{{ path('app_edit_accident', {'ref': a.id}) }}" class="edit-btn">Edit</a></td>
+                <td><a href="{{ path('app_delete_accident', {'ref': a.id}) }}" class="delete-btn" onclick="return confirm('Are you sure you want to delete this accident?')">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</fieldset>
+{% endblock %}

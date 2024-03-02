@@ -1,0 +1,205 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<nav class="navbar navbar-expand-lg fixed-top trans-navigation">
+  <div class="container">
+    <!--<a class="navbar-brand" href="base.html">-->
+      <img src="{{asset('front/images/logo2.png')}}" alt="" class="img-fluid b-logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <i class="fa fa-bars"></i>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav ">
+        <!--<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#!" id="navbarWelcome" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Home <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarWelcome">
+            <li><a class="dropdown-item" href="index.html">Home-1</a></li>
+            <li><a class="dropdown-item" href="index-2.html">Home-2</a></li>
+            <li><a class="dropdown-item" href="index-3.html">Onepage</a></li>
+                    
+            <li class="dropdown dropdown-submenu dropright">
+              <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
+    
+              <ul class="dropdown-menu" aria-labelledby="dropdown0301">
+                <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
+                <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+              </ul>
+            </li>
+            <li class="dropdown dropdown-submenu dropleft">
+              <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
+    
+              <ul class="dropdown-menu" aria-labelledby="dropdown0501">
+                <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
+                <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>-->
+        <li class="nav-item">
+          <a class="nav-link smoth-scroll" href="front">Home</a>
+        </li>
+        <li class="nav-item">
+            <p class="nav-link smoth-scroll">log in: </p>
+        </li>
+        <li class="nav-item">
+            <a href="{{ path('app_login') }}" class="btn btn-white btn-circled">log in</a>
+        </li>
+        <li class="nav-item">
+            <p class="nav-link smoth-scroll">sign up: </p>
+        </li>
+        <li class="nav-item">
+            <a href="{{ path('app_signup') }}" class="btn btn-white btn-circled">sign up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--MAIN HEADER AREA END -->
+
+<!--MAIN BANNER AREA START -->
+<div class="banner-area banner-3">
+  <div class="overlay dark-overlay"></div>
+  <div class="d-table">
+    <div class="d-table-cell">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
+           <div class="banner-content content-padding">
+            
+              <h2 class="banner-title">Where trust meets protection</h2>
+              <p>Create your new contract with us and enjoy the offers and the previleges of our AUTOSAFE insurance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--MAIN HEADER AREA END -->
+<!--  ABOUT AREA START  -->
+<section id="intro" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-md-12">
+        <div class="section-heading">
+          <p class="lead"> Trust us to protect your vehicle and provide peace of mind on the road.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-5 d-none d-lg-block col-sm-12 align-self-end">
+        <div class="intro-img">
+          <img src="{{asset('front/images/banner/why-choose.png')}}" alt="intro-img" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="intro-box">
+              <span>01.</span>
+              <h4>Comprehensive Coverage</h4>
+              <p>AutoSafe Insurance provides comprehensive coverage tailored to your needs, ensuring you have peace of mind on the road.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="intro-box">
+              <span>02.</span>
+              <h4>Professional Expertise</h4>
+              <p>With our team of experienced professionals, we offer expert guidance and support to help you make informed decisions about your insurance needs.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="intro-box">
+              <span>03.</span>
+              <h4>Customer Focus</h4>
+              <p>At AutoSafe Insurance, customer satisfaction is at the heart of what we do. We prioritize building lasting relationships with our clients through excellent service and support.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="intro-box">
+              <span>04.</span>
+              <h4>Innovative Solutions</h4>
+              <p>We leverage cutting-edge technology and innovative solutions to provide efficient and effective insurance products, ensuring the best possible coverage for our customers.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="intro-cta">
+              <p class="lead ">Still have any question on mind ? <a href="contact.html" class="smoth-scroll">Contact us</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  ABOUT AREA END  -->
+
+<!--  SERVICE AREA START  -->
+<section id="about" class="bg-light">
+ <div class="about-bg-img d-none d-lg-block d-md-block"></div>
+ <div class="about-bg-img d-none d-lg-block d-md-block" style="background-image: url('https://media.istockphoto.com/id/856956280/fr/photo/concept-dassurance-de.jpg?s=612x612&w=0&k=20&c=Cns06P0JlwEW8fALgq-en8wujhMobV_wDpcKQH-nAXQ=');"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-sm-12 col-md-8">
+        <div class="about-content">
+        <h5 class="subtitle">About us</h5>
+          <h3>Expert car insurance agency </h3>
+          <p>Our intelligent platform, Auto Safe Insurance (ASI), is the perfect companion for young drivers. With innovative features, we cater to all their needs with just a few clicks.</p>
+
+            <ul class="about-list">
+            <li><i class="far fa-check-circle"></i> Responsive site</li>
+
+            <li>
+              <i class="far fa-check-circle"> </i> Latest bootstrap 4
+            </li>
+
+            <li>
+              <i class="far fa-check-circle"> </i> Modern and clean design
+            </li>
+            <li>
+              <i class="far fa-check-circle"> </i> Working contact form
+            </li>
+            <li>
+              <i class="far fa-check-circle"> </i> Premium services and support
+            </li>
+            <li>
+              <i class="far fa-check-circle"></i> Cross browser compatiabilty
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  SERVICE AREA END  -->
+
+<!--  SERVICE PARTNER START  -->
+<section id="service-head" class=" bg-feature">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 m-auto">
+        <div class="section-heading text-white">
+          <!--<h4 class="section-title">Full stack digital marketing solution</h4>
+          <p>We’re full service which means we’ve got you covered on design & content right through to digital. You’ll
+            form a lasting relationship with us.</p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  SERVICE PARTNER END  -->
+{% endblock %}
